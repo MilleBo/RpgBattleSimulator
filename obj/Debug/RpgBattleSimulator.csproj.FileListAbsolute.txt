@@ -30,3 +30,4 @@ D:\Let's create\RPG battle simulator\RpgBattleSimulator\RpgBattleSimulator\bin\D
 D:\Let's create\RPG battle simulator\RpgBattleSimulator\RpgBattleSimulator\obj\Debug\RpgBattleSimulator.csprojResolveAssemblyReference.cache
 D:\Let's create\RPG battle simulator\RpgBattleSimulator\RpgBattleSimulator\obj\Debug\RpgBattleSimulator.exe
 D:\Let's create\RPG battle simulator\RpgBattleSimulator\RpgBattleSimulator\obj\Debug\RpgBattleSimulator.pdb
+D:\Let's create\RPG battle simulator\RpgBattleSimulator\RpgBattleSimulator\bin\Debug\Content\main_sprite.png
