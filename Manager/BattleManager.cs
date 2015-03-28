@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using RpgBattleSimulator.Entity;
+using RpgBattleSimulator.Gui;
 using SharpDX;
 using SharpDX.Toolkit.Content;
 using SharpDX.Toolkit.Graphics;
@@ -14,6 +15,7 @@ namespace RpgBattleSimulator.Manager
     {
         private List<BattleEntity> _player;
         private List<BattleEntity> _enemies;
+        private Window _statusWindow; 
 
         private enum Phase
         {
@@ -37,6 +39,7 @@ namespace RpgBattleSimulator.Manager
                        };
             _currentPhase = Phase.Intro;
             _counter = 0; 
+            _statusWindow = new Window(new Vector2(800 - 510, 480 - 160), 150, 500); //Should use screen width/height variables here instead of hardcorded
         }
 
         public void LoadContent(ContentManager content)
@@ -49,6 +52,7 @@ namespace RpgBattleSimulator.Manager
             {
                 battleEntity.LoadContent(content);
             }
+            _statusWindow.LoadContent(content);
         }
 
         public void Update(double gameTime)
@@ -94,6 +98,7 @@ namespace RpgBattleSimulator.Manager
 
         public void Draw(SpriteBatch spriteBatch)
         {
+            _statusWindow.Draw(spriteBatch);
             foreach (var battleEntity in _enemies)
             {
                 battleEntity.Draw(spriteBatch);

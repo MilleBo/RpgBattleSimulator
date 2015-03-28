@@ -72,6 +72,7 @@
   <ItemGroup>
     <Compile Include="Entity\BattleEntity.cs" />
     <Compile Include="Entity\Sprite.cs" />
+    <Compile Include="Gui\Window.cs" />
     <Compile Include="Manager\BattleManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="RpgBattleSimulatorGame.cs" />
@@ -79,6 +80,33 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Content\main_sprite.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\gui\window_down.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\gui\window_filler.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\gui\window_left.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\gui\window_lower_left_corner.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\gui\window_lower_right_corner.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\gui\window_right.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\gui\window_up.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\gui\window_upper_left_corner.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\gui\window_upper_right_corner.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

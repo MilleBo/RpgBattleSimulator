@@ -31,3 +31,12 @@ D:\Let's create\RPG battle simulator\RpgBattleSimulator\RpgBattleSimulator\obj\D
 D:\Let's create\RPG battle simulator\RpgBattleSimulator\RpgBattleSimulator\obj\Debug\RpgBattleSimulator.exe
 D:\Let's create\RPG battle simulator\RpgBattleSimulator\RpgBattleSimulator\obj\Debug\RpgBattleSimulator.pdb
 D:\Let's create\RPG battle simulator\RpgBattleSimulator\RpgBattleSimulator\bin\Debug\Content\main_sprite.png
+D:\Let's create\RPG battle simulator\RpgBattleSimulator\RpgBattleSimulator\bin\Debug\Content\gui\window_down.png
+D:\Let's create\RPG battle simulator\RpgBattleSimulator\RpgBattleSimulator\bin\Debug\Content\gui\window_filler.png
+D:\Let's create\RPG battle simulator\RpgBattleSimulator\RpgBattleSimulator\bin\Debug\Content\gui\window_left.png
+D:\Let's create\RPG battle simulator\RpgBattleSimulator\RpgBattleSimulator\bin\Debug\Content\gui\window_lower_left_corner.png
+D:\Let's create\RPG battle simulator\RpgBattleSimulator\RpgBattleSimulator\bin\Debug\Content\gui\window_lower_right_corner.png
+D:\Let's create\RPG battle simulator\RpgBattleSimulator\RpgBattleSimulator\bin\Debug\Content\gui\window_right.png
+D:\Let's create\RPG battle simulator\RpgBattleSimulator\RpgBattleSimulator\bin\Debug\Content\gui\window_up.png
+D:\Let's create\RPG battle simulator\RpgBattleSimulator\RpgBattleSimulator\bin\Debug\Content\gui\window_upper_left_corner.png
+D:\Let's create\RPG battle simulator\RpgBattleSimulator\RpgBattleSimulator\bin\Debug\Content\gui\window_upper_right_corner.png
