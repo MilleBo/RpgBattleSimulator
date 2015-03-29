@@ -33,7 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -72,43 +74,43 @@
   <ItemGroup>
     <Compile Include="Entity\BattleEntity.cs" />
     <Compile Include="Entity\Sprite.cs" />
+    <Compile Include="Entity\Stats.cs" />
     <Compile Include="Gui\Window.cs" />
+    <Compile Include="Gui\WindowStats.cs" />
     <Compile Include="Manager\BattleManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="RpgBattleSimulatorGame.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="Content\main_sprite.png">
+    <ToolkitAudio Include="Content\main_sprite.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\gui\window_down.png">
+    </ToolkitAudio>
+    <ToolkitTexture Include="Content\gui\window_filler.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\gui\window_filler.png">
+    </ToolkitTexture>
+    <ToolkitTexture Include="Content\gui\window_left.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\gui\window_left.png">
+    </ToolkitTexture>
+    <ToolkitTexture Include="Content\gui\window_lower_left_corner.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\gui\window_lower_left_corner.png">
+    </ToolkitTexture>
+    <ToolkitTexture Include="Content\gui\window_lower_right_corner.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\gui\window_lower_right_corner.png">
+    </ToolkitTexture>
+    <ToolkitTexture Include="Content\gui\window_up.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\gui\window_right.png">
+    </ToolkitTexture>
+    <ToolkitTexture Include="Content\gui\window_upper_left_corner.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\gui\window_up.png">
+    </ToolkitTexture>
+    <ToolkitTexture Include="Content\gui\window_upper_right_corner.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\gui\window_upper_left_corner.png">
+    </ToolkitTexture>
+  </ItemGroup>
+  <ItemGroup>
+    <ToolkitFont Include="Content\gui\font.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\gui\window_upper_right_corner.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    </ToolkitFont>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\SharpDX.2.6.3\build\SharpDX.targets" Condition="Exists('..\packages\SharpDX.2.6.3\build\SharpDX.targets')" />

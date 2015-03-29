@@ -27,7 +27,7 @@ namespace RpgBattleSimulator.Entity
 
         public void LoadContent(ContentManager contentManager)
         {
-            Texture = contentManager.Load<Texture2D>("main_sprite.png");
+            Texture = contentManager.Load<Texture2D>("main_sprite");
         }
 
         public void Draw(SpriteBatch spriteBatch)

@@ -11,10 +11,17 @@ namespace RpgBattleSimulator.Entity
     class BattleEntity
     {
         public Sprite Sprite { get; set; }
+        public Stats Stats { get; set; }
 
-        public BattleEntity(Sprite sprite)
+        public int CurrentHealth { get; set; }
+        public int CurrentMana { get; set; }
+
+        public BattleEntity(Sprite sprite, Stats stats)
         {
             Sprite = sprite;
+            Stats = stats;
+            CurrentHealth = Stats.Health;
+            CurrentMana = stats.Mana;
         }
 
         public void LoadContent(ContentManager content)

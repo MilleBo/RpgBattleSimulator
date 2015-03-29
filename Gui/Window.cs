@@ -29,18 +29,18 @@ namespace RpgBattleSimulator.Gui
             Height = height;
             Width = width; 
         }
-        public void LoadContent(ContentManager content)
+        public virtual void LoadContent(ContentManager content)
         {
-            _upperLeftCornerTexture = content.Load<Texture2D>("gui/window_upper_left_corner.png");
-            _upperRightCornerTexture = content.Load<Texture2D>("gui/window_upper_right_corner.png");
-            _lowerLeftCornerTexture = content.Load<Texture2D>("gui/window_lower_left_corner.png");
-            _lowerRightCornerTexture = content.Load<Texture2D>("gui/window_lower_right_corner.png");
-            _topTexture = content.Load<Texture2D>("gui/window_up.png");
-            _leftTexture = content.Load<Texture2D>("gui/window_left.png");
-            _fillerTexture = content.Load<Texture2D>("gui/window_filler.png");
+            _upperLeftCornerTexture = content.Load<Texture2D>("gui/window_upper_left_corner");
+            _upperRightCornerTexture = content.Load<Texture2D>("gui/window_upper_right_corner");
+            _lowerLeftCornerTexture = content.Load<Texture2D>("gui/window_lower_left_corner");
+            _lowerRightCornerTexture = content.Load<Texture2D>("gui/window_lower_right_corner");
+            _topTexture = content.Load<Texture2D>("gui/window_up");
+            _leftTexture = content.Load<Texture2D>("gui/window_left");
+            _fillerTexture = content.Load<Texture2D>("gui/window_filler");
         }
 
-        public void Draw(SpriteBatch spriteBatch)
+        public virtual void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(_upperLeftCornerTexture, Position, Color.White);
             spriteBatch.Draw(_upperRightCornerTexture, new Vector2(Position.X + Width - 15, Position.Y), Color.White);

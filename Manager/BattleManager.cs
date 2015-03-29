@@ -15,7 +15,7 @@ namespace RpgBattleSimulator.Manager
     {
         private List<BattleEntity> _player;
         private List<BattleEntity> _enemies;
-        private Window _statusWindow; 
+        private WindowStats _statusWindow; 
 
         private enum Phase
         {
@@ -31,15 +31,37 @@ namespace RpgBattleSimulator.Manager
         {
             _player = new List<BattleEntity>
                       {
-                          new BattleEntity(new Sprite(new Vector2(850, 200), Color.White, SpriteEffects.None))
+                          new BattleEntity(
+                              new Sprite(new Vector2(850, 200), Color.White, SpriteEffects.None),
+                              new Stats
+                              {
+                                  Name = "Litz",
+                                  Health = 20,
+                                  Mana = 5,
+                                  Strength = 5,
+                                  Defense = 2,
+                                  Magic = 2,
+                                  Speed = 3
+                              })
                       };
             _enemies = new List<BattleEntity>
                        {
-                           new BattleEntity(new Sprite(new Vector2(-50, 200), Color.White, SpriteEffects.FlipHorizontally))
+                           new BattleEntity(
+                               new Sprite(new Vector2(-50, 200), Color.White, SpriteEffects.FlipHorizontally),
+                               new Stats
+                              {
+                                  Name = "Enemy",
+                                  Health = 10,
+                                  Mana = 5,
+                                  Strength = 5,
+                                  Defense = 2,
+                                  Magic = 2,
+                                  Speed = 3
+                              })
                        };
             _currentPhase = Phase.Intro;
             _counter = 0; 
-            _statusWindow = new Window(new Vector2(800 - 510, 480 - 160), 150, 500); //Should use screen width/height variables here instead of hardcorded
+            _statusWindow = new WindowStats(new Vector2(800 - 510, 480 - 160), 150, 500, _player); //Should use screen width/height variables here instead of hardcorded
         }
 
         public void LoadContent(ContentManager content)

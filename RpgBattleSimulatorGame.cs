@@ -15,7 +15,7 @@ namespace RpgBattleSimulator
         private GraphicsDeviceManager _deviceManager;
         private BattleManager _battleManager; 
         private SpriteBatch _spriteBatch;
-        private SpriteFont _font; 
+
         public RpgBattleSimulatorGame()
         {
             _deviceManager = new GraphicsDeviceManager(this);
